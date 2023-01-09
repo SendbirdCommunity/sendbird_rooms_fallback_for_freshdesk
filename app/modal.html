@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A Template App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sendbird-calls/1.9.3/SendBirdCall.min.js" integrity="sha512-8UrnIOEOmOSPEn69SVaNGYlrMiE4KfFGbmJEO2Y+YwNwk8zVnoYczJqwOEb993jl2lhAJEdubIxgu3sPXfcVwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+<body>
+ <div style="display: grid; grid-gap: 20px; ">
+     <div id="details"></div>
+     <div>
+         <button onclick="createUrl()">Create</button> a url, then copy and share it the merchant.
+         <p  id="link" style="overflow-wrap: break-word; font-size: 0.6rem; width:500px"></p>
+         <button onclick="enterRoom()">Enter the room yourself</button>
+     </div>
+     <div id="remote_video_target"></div>
+ </div>
+
+
+
+<script defer src="scripts/modal.js"></script>
+</body>
+</html>

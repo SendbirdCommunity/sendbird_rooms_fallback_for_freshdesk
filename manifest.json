@@ -1,0 +1,26 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshdesk": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "functions": {
+        "getAgentsSendbirdCreds": {
+          "timeout": 5
+        },
+        "buildBackupGroupCallUrl": {
+          "timeout": 10
+        }
+      }
+    }
+  },
+  "whitelisted-domains": ["https://api-APP_ID.calls.sendbird.com" ,"https://api-APP_ID.sendbird.com" ],
+  "engines": {
+    "node": "14.18.0",
+    "fdk": "8.6.7"
+  }
+}
