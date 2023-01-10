@@ -1,4 +1,4 @@
-const APP_ID = 'YOUR_SENDBIRD_APP_ID'
+const APP_ID = 'YOUR_APP_ID'
 const API_TOKEN = 'API_TOKEN'
 const headers = {
     "Api-Token": API_TOKEN,
@@ -88,7 +88,7 @@ exports = {
         //Headers here use templating to pick up the iparam.api_token - https://developers.freshdesk.com/v2/docs/request-method/#sample_requests
         //See iparam.json for the settings
         //Here the api-token is hard coded - don't use this approach in production.
-        $request.get(`https://api-${APP_ID}.sendbird.com/v3/users/` + user.sendbirdUserId, {headers})
+        $request.get(`https://api-${APP_ID}.sendbird.com/v3/users/${user.sendbirdUserId}` , {headers})
             .then(
                 function (data) {
                     //handle "data"

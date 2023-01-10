@@ -28,7 +28,7 @@ const updateUiDetailsText = () => {
 // Initialize the Sendbird Calls library and authenticate the user
 async function initSendbirdCalls() {
     // Initialize the library with a given appId
-    SendBirdCall.init("885C2616-DBF8-4BDC-9178-4A1A662614E3");
+    SendBirdCall.init("YOUR_APP_ID");
     // Set the logger level to INFO
     SendBirdCall.setLoggerLevel(SendBirdCall.LoggerLevel.INFO);
     try {
@@ -89,7 +89,6 @@ const addSendbirdCallsListener = (room) => {
     room.on('remoteParticipantEntered', (remoteParticipant) => {
         console.log("remote participant entered")
     });
-
 }
 
 

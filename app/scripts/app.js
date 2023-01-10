@@ -36,7 +36,6 @@ const collectDataToPassToModal = async () => {
     //Additionally, it would be possible at this point to create the user in Sendbird.
     //Here we only fetch the user but you could try to fetch the user and if that fails create a new user using the server.js functions.
     const sendbirdUser = await fetchSendbirdUserCredentials(agentData.loggedInUser.org_agent_id) //https://sendbird.com/docs/chat/v3/platform-api/user/listing-users/get-a-user#1-get-a-user
-
     return {agentData, ticketCreatorData, sendbirdUser}
 }
 
